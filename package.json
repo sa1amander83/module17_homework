@@ -1,0 +1,21 @@
+{
+  "name": "module17",
+  "version": "1.0.0",
+  "description": "trainig in design",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "test": "test",
+    "compile-sass": "sass src/scss/style.scss src/css/style.css",
+    "watch-sass": "sass --watch src/scss/style.scss:src/css/style.css",
+    "build": "webpack"
+  },
+  "author": "vitality",
+  "license": "ISC",
+  "dependencies": {
+    "emmet": "^2.2.1"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
