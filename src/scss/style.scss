@@ -97,6 +97,7 @@ html {
  */
 
 body {
+  width: 1440px;
   margin: 0;
   font-family: 'Roboto', serif;
   font-size: 16px;
@@ -168,7 +169,19 @@ pre {
 
 a {
   background-color: transparent;
-  color: $black;
+
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+
+  /* Black */
+
+  color: #1B1B1B;
 }
 
 /**
@@ -468,12 +481,20 @@ template {
 /* header */
 
 header {
+  display: flex;
   position: sticky;
-  top: 0;
-  background: #fff;
+  top: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+
   z-index: 1;
+  justify-self: center;
+  background: transparent;
+
 }
 .main-link {
+  position: relative;
+  flex: 1 200px;
   font-family: 'Rubik', serif;
 align-self: flex-start;
   float: left;
@@ -484,45 +505,70 @@ align-self: flex-start;
 
 }
 
-.menu__frame {
+.nav__menu__frame {
+  //display: flex;
+  //position: relative;
   margin-top: 30px ;
   margin-left: 40px;
   margin-right: 40px;
-  display: -ms-flexbox;
-  flex-wrap: nowrap;
+  vertical-align: center;
+//flex: auto;
+//  flex-wrap: nowrap;
   //padding:35px 40px 0 40px ;
-  &-link {
-       text-decoration: none;
-  }
+  text-decoration: none;
 }
 
+  .header__menu__wrap {
+    display: flex;
+    text-align: center;
+    //margin-top: 15px;
+    margin-right: 40px;
+    justify-content: space-around;
+    margin-left: 650px;
+    width: 400px;
+    height: 50px;
+
+  }
+#nav {
+  display: flex;
+}
 .header__menu {
 margin-left: 1200px;
-
-  display: flex;
-  align-self: flex-end;
-padding-inline-end: inherit;
-  flex-wrap: nowrap;
-  justify-content:  space-between;
+  //flex: auto;
+  //align-self: flex-end;
+//padding-inline-end: inherit;
+//  flex-wrap: nowrap;
+//  justify-content:  space-between;
   font-style: normal;
   font-weight: normal;
   //float: right;
   font-size: 16px;
   line-height: 19px;
+  text-decoration: none;
 }
 
-.enterButton {
+.right__menu {
+  margin-top: -20px;
   display: flex;
-  flex-direction: row;
+
+}
+
+
+
+
+.enterButton {
+  position: relative;
+  //display: flex;
+  //flex-direction: row;
   align-items: center;
   padding: 12px 30px;
-
-  position: absolute;
+  align-self: flex-end;
+  //position: absolute;
   width: 106px;
   height: 43px;
   right: 40px;
-  top: 23px;
-
+  top: 15px;
+  background: #FFFFFF;
   border: 1px solid rgba(27, 27, 27, 0.4);
   box-sizing: border-box;
   border-radius: 6px;
