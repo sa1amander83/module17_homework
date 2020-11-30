@@ -495,15 +495,28 @@ header {
 .main-link {
   position: relative;
   flex: 1 200px;
-  font-family: 'Rubik', serif;
+  font-family: 'Rubik', sans-serif;
 align-self: flex-start;
   float: left;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
+}
+
+.rectangleTop {
+  position: relative;
+  top: -32px;
+  left: 40px;
+  //width: 200px;
 
 }
+.rectangleBottom {
+  position: relative;
+  top: -45px;
+  left: 40px;
+}
+
 
 .nav__menu__frame {
   //display: flex;
