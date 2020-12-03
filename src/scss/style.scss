@@ -488,9 +488,7 @@ template {
 
 .container {
   text-align: center;
-  //align-content: center;
-  //align-items: center;
-  //margin: 0 auto;
+
   @include breakpoint(large) {
     width:1440px;
 
@@ -517,8 +515,6 @@ template {
 html,
 body {
 
-  //min-width: 1440px;
-  //min-height: 2000px;
 }
 
 .container {
@@ -547,16 +543,10 @@ width: 1440px;
   justify-content: space-between;
 
 }
-//
-
-
 
 .main-navigation .container {
   display: flex;
-  //justify-content: space-around;
-  //align-self: flex-end;
-margin-left:750px;
-
+ margin-left:750px;
 }
 
 .main-navigation-wrapper .main_logo {
