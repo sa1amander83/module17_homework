@@ -10,38 +10,40 @@
 
 <body>
 
-    <header class="main-header">
-        <div class="main-navigation-wrapper">
-        <ul>
-          <li>  <a href="#">
-                 <img src="./src/img/Logo.svg" alt=" логотип сайта"  class="main_logo">
-             </a></li>
-        </ul>
-        <nav class="main-navigation">
-            <div class="container">
-                <ul class="site-navigation">
-                    <li><a href="#"  >О нас</a></li>
-                    <li><a href="#">Условия</a> </li>
-                    <li><a href="#">Частые вопросы</a> </li>
-                 </ul>
-             </div>
-        </nav>
-        </div>
-            <div>
+    <header class="header">
+<!--        главная кнопка SKILLDRIVE-->
+           <div class="header__menu">
+                 <a href="#" id="main_logo">
+                    <img src="./src/img/Logo.svg" alt=" логотип сайта" >
+                </a>
 
-        <ul class="user-navigation">
-            <li><a class="login-link" href ="#">Войти </a></li>
-        </ul>
+<!--        МЕНЮШКА о нас  условия.....-->
+               <div class="header__menu__wrap">
+                     <nav class="nav__menu__frame">
+                        <a class="menu__frame-link" href="">О нас</a>
+                        <a class="menu__frame-link" href="">Условия</a>
+                        <a class="menu__frame-link" href="">Частые вопросы</a>
+                      <button class="enterButton">Войти</button>
+                </nav>
+               </div>
+<!--        кнопка-->
+
+
         </div>
     </header>
+    <main>
 
-    <main class="container">
-        <img class="main-header-logo" src="./src/img/undraw_team_spirit_hrr4_1.svg" alt="рисунок команды">
-        <div  class="about-section">
-            <section >
-                <h1>О нас</h1>
+            <div class="image  content__container is-align-center">
+                <img src="./src/img/undraw_team_spirit_hrr4_1.svg" alt="рисунок команды">
+            </div>
 
-                <div class="description">  Это учебный проект,
+            <br>
+            <section class="about__section">
+<!--                <div class="content__container is-align-center">-->
+<div class="about__wrap  content__container is-align-center">
+                        <h1>О нас</h1>
+
+            <div class="description">  Это учебный проект,
                 созданный с целью получения боевого опыта в
                 разработке настоящего живого веб-приложения.
                 Этот сервис имитирует работу каршеринга,
@@ -49,79 +51,76 @@
                 но и сдавать их в аренду.
             </div>
 
+            </div>
+
             </section>
-        </div>
 
 
-<div class="contacts fullscreen" >
 
-    <h3 class="h2-contact"> Контакты</h3>
-        <div class="index-columns">
-        <div class="email-section">
+
+    <h3 class="contacts"> Контакты</h3>
+        <section class="contact__wrap">
             <div class="email"> Электронная почта</div>
-              <div >
-                <a class="email-block" href="mailto:drive@skillfactory.com" target="_blank" rel="nofollow"> drive@skillfactory.com</a>
+            <br>
+        <div class="email-link">
+                <a href="mailto:drive@skillfactory.com" target="_blank" rel="nofollow"> drive@skillfactory.com</a>
         </div>
-              </div>
+              </section>
 
-        <div class="rectangle"></div>
+        <div class="contacts__rectangle"></div>
 
-        <div class="phone-section">
+        <section class="phone__wrap">
             <div class="phone">Телефон</div>
-            <div class="phoneNumber"> +7 912 123-45-67</div>
-        </div>
-        </div>
-</div>
-<br>
-        <div>
-        <section class="team" >
+             <br>
+         <div class="phoneNumber"> +7 912 123-45-67</div>
+        </section>
 
+
+        <section class="command__frame is-align-center" >
+        <div class="content__container ">
             <h3>Команда</h3>
-            <div class="team-wrapper">
-                 <div class="team-unit">
+            <div class="command__frame-wrapper">
+                 <div class="command__frame-unit">
                 <img src="./src/img/ivanov.png" alt="Иван Иванов СЕО менеджер">
                 <div class="unit__initials">Иван Иванов</div>
                 <div class="unit__prof">СЕО</div>
             </div>
-            <div class="team-unit">
+            <div class="command__frame-unit">
                 <img src="./src/img/smirnov.png" alt="Алексей Смирнов фронтендразработчик">
                 <div class="unit__initials">Алексей Смирнов</div>
                 <div class="unit__prof">Frontend-разработчик</div>
 
             </div>
-            <div class="team-unit">
+            <div class="command__frame-unit">
                 <img src="./src/img/yarcev.png" alt="Денис Ярцев бэкенд разработчик">
                 <div class="unit__initials">Денис Ярцев</div>
                 <div class="unit__prof">Backend-разработчик</div>
             </div>
-            <div class="team-unit">
+            <div class="command__frame-unit">
                 <img src="./src/img/morozov.png" alt="Николай Морозов дизайнер">
                 <div class="unit__initials">Николай Морозов</div>
                 <div class="unit__prof">Дизайнер</div>
             </div>
-            <div class="team-unit">
+            <div class="command__frame-unit">
                 <img src="./src/img/deeva.png" alt="Ирина Деева копирайтер">
                 <div class="unit__initials">Ирина Деева</div>
                 <div class="unit__prof">Копирайтер</div>
             </div>
-            <div class="team-unit">
+            <div class="command__frame-unit">
                 <img src="./src/img/strelkova.png" alt="Мария Стрелкова СММ менеджер">
                 <div class="unit__initials">Мария Стрелкова</div>
                 <div class="unit__prof">SMM</div>
               </div>
             </div>
-        </section>
         </div>
-
+        </section>
 </main>
-<footer class="main-footer">
-    <div class="container">
-    <p class="footer__copyright">© SkillDrive Inc. 2020</p>
+<footer class="footer__frame">
+    <div class="footer__copy">© SkillDrive Inc. 2020</div>
     <div class="footer__social-links">
         <a href="" class="icon-vk" target="_blank" rel="nofollow"></a>
         <a href="" class="icon-insta" target="_blank" rel="nofollow"></a>
         <a href="" class="icon-facebook" target="_blank" rel="nofollow"></a>
-    </div>
     </div>
 </footer>
 </body>
