@@ -1,8 +1,5 @@
 //sass --watch src/scss/style.scss:src/css/style.css
-//*, *::before, *::after {
-//
-// box-sizing: border-box;
-//}
+
 $black:#000;
 $white: #FFFF;
 $lightgrey: #F7F9FB;
@@ -147,12 +144,13 @@ h1 {
 }
 
 h2, h3 {
- padding-top: 80px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
   line-height: 150%;
   text-align: center;
+  min-height: 60px;
 }
 
 /* Grouping content
@@ -518,25 +516,15 @@ template {
 
 html,
 body {
-
 }
 
 .container {
-//width: 1440px;
-//  margin: 0 auto;
-//  //padding: 0 10px;
   text-align: center;
-  //width: 400px;
 }
 
-.main-header {
-  //margin-top: 10px;
-  //min-height: 90px;
-}
 
-a .main-link{
-  //clear: none;
-}
+
+
 .main-navigation{
   display: flex;
   justify-content: space-around;
@@ -548,8 +536,7 @@ a .main-link{
   display: flex;
   margin-bottom: 80px;
   justify-content: space-around;
-  //justify-content: center;
-  // align-items: center;
+
 flex-direction: column;
   align-items: center;
   min-height: 90px;
@@ -557,7 +544,7 @@ flex-direction: column;
 
 .main-navigation-wrapper .container {
   display: flex;
- //margin-left:750px;
+
 justify-content: space-between;
 
 }
@@ -567,11 +554,6 @@ justify-content: space-between;
    align-items: center;
    width: 120px;
     padding-left: 38px;
-
-   //margin: 0 auto; //width: 150px;
- //margin-left:  230px ;
- // box-sizing: border-box ;
-    //margin-top:4px;
   min-height: 90px;
 
 }
@@ -608,13 +590,9 @@ justify-content: space-between;
 
 
 .main-navigation-wrapper .container .menu-navigation{
-  //background-color:#000088;
   display: flex;
-  //flex-direction: row;
   width: 500px;
-  //flex-wrap: nowrap;
   justify-content: space-evenly;
-  //align-items: center;
   padding-right: 17px;
 }
 .site-navigation, .user-navigation {
@@ -622,23 +600,16 @@ justify-content: space-between;
   min-height: 90px;
 
 }
-//.container .site-navigation {
-//
-//  list-style: none;
-//  justify-content: center;
-//  margin-left: 20px;
-//}
+
 
 
 .user-navigation {
-
   display:flex;
 text-align: center;
 }
 
 .site-navigation a, .user-navigation a {
     display:flex;
-
     padding: 25px 15px;
     vertical-align: middle;
   font-family: Roboto-medium, serif, serif;
@@ -649,7 +620,6 @@ text-align: center;
   line-height: 19px;
   /* identical to box height */
   list-style: none;
-
   /* Black */
 
   color: #1B1B1B;
@@ -665,7 +635,7 @@ text-align: center;
 
 
 .user-navigation .login-link{
-  //display: flex;
+
     padding: 12px 30px;
   width: 106px;
   height: 43px;
@@ -673,34 +643,21 @@ text-align: center;
   flex-direction: row;
   align-items: center;
 
-  //position: absolute;
-
-  //right: 150px;
-  //top: 23px;
   border: 1px solid rgba(27, 27, 27, 0.4);
   box-sizing: border-box;
   border-radius: 6px;
 }
 
-.login-link{
-
-
-}
 
 .login-link::before {
-
   content:"";
   position: absolute;
 
 }
 
-
-
-
 .site-navigation {
   display: flex;
-  //flex-wrap: nowrap;
-  //width: 360px;
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -725,41 +682,31 @@ h2, h3 {
 
 .main-page-logo {
 position: relative;
-  //order:2;
 min-height: 300px;
-
-
 }
+
 .user-navigation {
   display: flex;
 align-items: center;
 margin: 0 auto;
-  //margin-right: 50px;
+
   padding: 0;
   list-style: none;
 }
-//block about description
+
 
 .user-navigation-wrapper {
 
   display: flex;
-//margin:0 auto;
-//  padding: 0;
-}
-
-.about-section {
-
 }
 
 .description {
   margin:auto auto 80px auto;
   width: 930px;
-  //text-align: justify-all;
-min-height: 105px;
+  min-height: 105px;
   justify-content: center;
-//flex-wrap: wrap;
   font-family: Roboto-regular, sans-serif;
-    font-style: normal;
+  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
@@ -767,8 +714,7 @@ min-height: 105px;
 }
 
 .contacts{
-  //width: 100%;
-  margin: 0;
+
   min-height: 340px;
   background: #F7F9FB;
 }
@@ -783,14 +729,13 @@ min-height: 105px;
 .index-columns {
 
   display: flex;
-  //padding: 0 450px;
+
  justify-content: center;
   margin: 35px auto;
 
 }
 
 .email-section {
-  //vremenno
   min-height: 56px;
   margin-right: 70px;
 
@@ -810,11 +755,8 @@ min-height: 105px;
    font-style: normal;
    font-weight: normal;
    font-size: 20px;
-   line-height: 147.3%;
-   /* or 29px */
-
+   line-height:29px;
    text-align: center;
-
    color: #000000;
 
 }
@@ -826,7 +768,6 @@ min-height: 105px;
   background: #C8C8CF;
 }
 .phone-section {
-  //vremenno
   min-height: 56px;
   margin-left: 70px;
 
@@ -845,15 +786,16 @@ min-height: 105px;
 .phoneNumber{
   font-size: 20px;
   line-height: 147.3%;
-    text-align: center;
-width: 264px;
+  text-align: center;
+  width: 264px;
   color: #000000;
 }
-
-.team {
-
-margin-top: -70px;
+.h3-team {
+  margin-top: 75px;
+  margin-bottom: 40px;
+  min-height: 80px;
 }
+
 
 .team-wrapper {
   width: 1080px;
@@ -870,7 +812,7 @@ margin-top: -70px;
 }
 
 .unit__initials {
-  margin-top: 15px;
+  margin-top: 18px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -883,7 +825,7 @@ margin-top: -70px;
 .unit__prof {
   font-style: normal;
   font-weight: normal;
-  margin-top: 10px;
+  margin-top: 9px;
   font-size: 14px;
   line-height: 147.3%;
   /* identical to box height, or 21px */
@@ -893,36 +835,22 @@ margin-top: -70px;
 /* footer */
 
 .main-footer {
-  position: relative;
   display: flex;
-  flex-direction: row;;
-  flex-wrap: nowrap;
   margin-top: 60px;
   align-items: center;
   align-content: center;
-  justify-items: center;
   justify-content: center;
-  min-height: 124px;
+  min-height: 126px;
   background: #3f3d56;
-
-
 }
 
 .main-footer .container {
-//padding-top: 50px;
 display: flex;
   justify-content: space-between;
 }
-//.container-footer {
-//  display: flex;
-//
-//
-//}
-
 
 .copyright-wrap {
   text-align: center;
-
 }
 
 .footer__copyright {
@@ -931,9 +859,6 @@ width: 155px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-
-  //line-height: 19px;
-  /* identical to box height */
   color: #FFFFFF;
   opacity: 0.4;
   left: 0;
@@ -951,5 +876,4 @@ margin-left: 38px;
     line-height: 19px;
     right: 0;
     margin-right: 32px;
-
 }
