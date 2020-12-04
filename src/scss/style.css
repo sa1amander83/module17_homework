@@ -438,6 +438,7 @@ template {
 
 .container {
   text-align: center;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -463,10 +464,6 @@ template {
     margin: 0 auto;
   }
 }
-.container {
-  text-align: center;
-}
-
 .main-navigation {
   display: flex;
   justify-content: space-around;
@@ -535,7 +532,7 @@ p {
 
 .site-navigation a, .user-navigation a {
   display: flex;
-  padding: 25px 15px;
+  padding: 12px 15px;
   vertical-align: middle;
   font-family: Roboto-medium, serif, serif;
   justify-content: space-between;
@@ -554,6 +551,10 @@ p {
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #dbd6d6;
+  padding: 12px 30px;
+  border: 1px solid rgba(27, 27, 27, 0.4);
+  box-sizing: border-box;
+  border-radius: 6px;
 }
 
 .user-navigation .login-link {
@@ -565,11 +566,6 @@ p {
   border: 1px solid rgba(27, 27, 27, 0.4);
   box-sizing: border-box;
   border-radius: 6px;
-}
-
-.login-link::before {
-  content: "";
-  position: absolute;
 }
 
 .site-navigation {

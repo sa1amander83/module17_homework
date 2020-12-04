@@ -490,6 +490,7 @@ template {
 
 .container {
   text-align: center;
+  margin: 0 auto;
 
   @include breakpoint(large) {
     width:1440px;
@@ -517,12 +518,6 @@ template {
 html,
 body {
 }
-
-.container {
-  text-align: center;
-}
-
-
 
 
 .main-navigation{
@@ -610,7 +605,7 @@ text-align: center;
 
 .site-navigation a, .user-navigation a {
     display:flex;
-    padding: 25px 15px;
+    padding: 12px 15px;
     vertical-align: middle;
   font-family: Roboto-medium, serif, serif;
   justify-content: space-between;
@@ -631,7 +626,16 @@ text-align: center;
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #dbd6d6;
+  padding: 12px 30px;
+  //width: 106px;
+  //height: 43px;
+
+   border: 1px solid rgba(27, 27, 27, 0.4);
+  box-sizing: border-box;
+  border-radius: 6px;
 }
+
+
 
 
 .user-navigation .login-link{
@@ -648,12 +652,6 @@ text-align: center;
   border-radius: 6px;
 }
 
-
-.login-link::before {
-  content:"";
-  position: absolute;
-
-}
 
 .site-navigation {
   display: flex;
@@ -686,17 +684,15 @@ min-height: 300px;
 }
 
 .user-navigation {
-  display: flex;
-align-items: center;
-margin: 0 auto;
-
-  padding: 0;
-  list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
 }
 
 
 .user-navigation-wrapper {
-
   display: flex;
 }
 
