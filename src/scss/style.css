@@ -1,5 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 /* mixins*/
+@media (min-width: 1200px) {
+  section {
+    padding: 100px 0;
+  }
+}
+section.is-grey {
+  background: #F6F6F6;
+}
+
+.is-desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .is-desktop {
+    display: block;
+  }
+}
+.is-tablet {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .is-tablet {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .is-tablet {
+    display: none;
+  }
+}
+.is-mobile {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .is-mobile {
+    display: none;
+  }
+}
+.is-xs {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .is-xs {
+    display: none;
+  }
+}
+.content-container {
+  width: calc(100% - 60px);
+  padding: 0 30px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .content-container {
+    width: 944px;
+    margin: 0 auto;
+  }
+}
+.content-container {
+  width: calc(100% - 60px);
+  padding: 0 30px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .content-container {
+    width: 944px;
+    margin: 0 auto;
+  }
+}
 @font-face {
   font-family: "Roboto-medium";
   src: url("../fonts/Roboto-medium.ttf");
@@ -222,7 +296,6 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-  max-width: 100%;
   height: auto;
   border-style: none;
 }
@@ -436,33 +509,11 @@ template {
 }
 
 .container {
-  text-align: center;
   margin: 0 auto;
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1440px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .container {
-    width: 100vw;
-  }
+  width: calc(100% - 40px);
+  text-align: center;
 }
 
-@media (min-width: 1440px) {
-  .fullsceen {
-    width: 50vw;
-    margin-left: -100%;
-  }
-
-  .fullsceen img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-}
 .main-navigation {
   display: flex;
   justify-content: space-around;
@@ -600,11 +651,6 @@ h2, h3 {
   font-family: Roboto-medium, serif;
 }
 
-.main-page-logo {
-  position: relative;
-  min-height: 300px;
-}
-
 .user-navigation {
   display: flex;
   align-items: center;
@@ -618,15 +664,15 @@ h2, h3 {
 }
 
 .description {
-  margin: auto auto 80px auto;
-  width: 930px;
+  margin: auto 260px 80px;
+  min-width: 930px;
   min-height: 105px;
-  justify-content: center;
   font-family: Roboto-regular, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
+  color: #494848;
 }
 
 .contacts {
@@ -635,7 +681,7 @@ h2, h3 {
 }
 
 .h2-contact {
-  width: 225px;
+  min-width: 225px;
   min-height: 60px;
   padding-top: 75px;
   margin: 0 auto;
@@ -649,7 +695,7 @@ h2, h3 {
 
 .email-section {
   min-height: 56px;
-  margin-right: 70px;
+  min-width: 265px;
 }
 
 .email {
@@ -660,7 +706,7 @@ h2, h3 {
   line-height: 147.3%;
   color: #4F4F4F;
   padding-bottom: 6px;
-  width: 264px;
+  min-width: 264px;
 }
 
 .email-block {
@@ -675,13 +721,13 @@ h2, h3 {
 .rectangle {
   width: 1px;
   height: 65px;
-  margin-top: -5px;
+  margin: -5px 69px;
   background: #C8C8CF;
 }
 
 .phone-section {
   min-height: 56px;
-  margin-left: 70px;
+  min-width: 265px;
 }
 
 .phone {
@@ -698,7 +744,7 @@ h2, h3 {
   font-size: 20px;
   line-height: 147.3%;
   text-align: center;
-  width: 264px;
+  min-width: 264px;
   color: #000000;
 }
 
@@ -708,8 +754,11 @@ h2, h3 {
   min-height: 80px;
 }
 
+.container .team-wrapper {
+  padding: 0 80px;
+}
+
 .team-wrapper {
-  width: 1080px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;

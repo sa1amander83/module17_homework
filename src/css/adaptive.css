@@ -1,0 +1,354 @@
+/*desktop*/
+@media only screen and (min-width: 1450px) {
+    .is-mobile {
+        display: none;
+    }
+
+    html {
+        text-align: center;
+    }
+    body {
+        max-width: 1440px;
+        text-align: center;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background: #fff;
+        z-index: 1;}
+
+
+    .description {
+        margin: 30px 253px;
+        min-width:50%;
+        font-family: Roboto-regular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #494848;
+    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-contacts {
+        padding: 0;
+        margin: -50px auto;
+    }
+    h1 {
+        margin-top: -45px;
+        min-height: 77px;
+        font-family: Roboto-bold, Arial, sans-serif;
+        margin-bottom: 25px;
+    }
+
+.contacts .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.index-columns {
+    display: flex;
+
+}
+.h3-team {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    min-height: 80px;
+}
+}
+.main-footer {
+
+    margin-top: -42px;
+}
+
+/* medium devices */
+
+@media only screen and (max-width: 992px) {
+    .is-mobile {
+        display: none;
+    }
+    body {
+        min-width: 1440px;
+    }
+    .description {
+        margin: auto 350px 80px;
+        min-width:50%;
+        font-family: Roboto-regular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #494848;
+    }
+
+}
+
+
+/* tablets */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* small devices */
+
+
+@media only screen and (max-width: 480px) {
+
+    html {
+        max-width: 375px;
+    }
+    body {
+        text-align: center;
+        margin: 0;
+       max-width: 375px;
+        /*max-width: calc(100% - 10px);*/
+    }
+
+
+
+    section {
+max-width: 375px;
+    }
+    .main-header {
+        max-width: 90%;
+    }
+    .main-navigation-wrapper {
+        width: 90%;
+        display: flex;
+        margin-bottom: 5px;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        min-height: 70px;
+    }
+
+    .is-desktop {
+        display: none;
+    }
+
+    .is-mobile {
+        display: block;
+    }
+    .main-header-logo {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        min-height: 30px;
+        /*margin: -45px 200px 0 -5px;*/
+        min-width: 115px;
+        margin-top: -45px;
+    }
+
+    .about-section {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 32px;
+        /*margin-top:40px;*/
+        margin: 40px 0 5px 0;
+        min-height: 40px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+   img.main-page-logo {
+        max-width: 375px;
+        max-height: 200px;
+        margin-top: 10px;
+        padding: 0;
+       margin-bottom: 0;
+    }
+    .site-navigation, .user-navigation {
+        display: none;
+    }
+
+
+
+    .description.is-mobile{
+        min-width: 335px;
+        font-family: Roboto-regular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #494848;
+        margin: 8px 3px;
+        margin: 8px 3px;
+
+    }
+
+
+    .section-contacts {
+        margin-top: 35px;
+        min-height: 237px ;
+    }
+    .h2-contact {
+        padding-top: 40px;
+    }
+
+
+    .contacts .fullscreen {
+        max-width: 335px;
+        background: #F7F9FB;
+    }
+    
+    .index-columns {
+        display: flex;
+        flex-direction: column;
+        margin-top: -2px;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .contacts {
+        background: #F7F9FB;;
+        min-height: 235px;
+
+    }
+
+
+    .team img {
+        width: 80px;
+    }
+    .email-section {
+        margin: -11px auto;
+    }
+.phone-section {
+    margin: 19px auto;
+}
+
+    .email, .phone {
+
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 147.3%;
+        /* identical to box height, or 18px */
+
+        text-align: center;
+
+        /* Gray 2 */
+
+        color: #4F4F4F;
+    }
+
+    .email-block , .phoneNumber    {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 147.3%;
+        /* identical to box height, or 21px */
+
+        text-align: center;
+
+        color: #000000;
+    }
+
+
+
+
+
+    .container .team-wrapper {
+      max-width: 334px;
+        padding: 0;
+        margin: 0 0 -12px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+
+    text-align: center;
+
+    /* Black */
+
+    color: #1B1B1B;
+}
+
+
+
+.h3-team {
+    margin-top: 40px;
+min-height: 30px;
+    margin-bottom: 15px;
+
+}
+    .team-unit {
+        margin: 15px auto;
+        min-width: 167px;
+        min-height: 140px;
+
+    }
+
+
+.unit__initials{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 147.3%;
+    /* identical to box height, or 24px */
+    margin-top: 8px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.unit__prof {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 147.3%;
+    /* identical to box height, or 18px */
+margin-top: 0;
+    text-align: center;
+
+    /* Gray 3 */
+
+    color: #828282;
+}
+
+
+    .main-footer {
+        max-width: 100%;
+        margin-top: 50px;
+
+    }
+.copyright-wrap {
+    margin-left: -3px;
+}
+.main-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.footer__copyright{
+    margin: 10px 0 auto;
+    }
+
+    .footer__social-links{
+        margin: 8px -9px auto;
+    }
+}
+
+
+/* ihpone retina */
+@media only screen and (max-width: 320px) {
+
+}
