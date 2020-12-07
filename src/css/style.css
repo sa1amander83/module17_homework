@@ -1,79 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 /* mixins*/
-@media (min-width: 1200px) {
-  section {
-    padding: 100px 0;
-  }
-}
-section.is-grey {
-  background: #F6F6F6;
-}
+/*@media (min-width: 1200px) {*/
+/*  section {*/
+/*    padding: 100px 0;*/
+/*  }*/
+/*}*/
+/*section.is-grey {*/
+/*  background: #F6F6F6;*/
+/*}*/
 
-.is-desktop {
-  display: none;
-}
+/*.is-desktop {*/
+/*  display: none;*/
+/*}*/
 
-@media (min-width: 1200px) {
-  .is-desktop {
-    display: block;
-  }
-}
-.is-tablet {
-  display: none;
-}
+/*@media (min-width: 1200px) {*/
+/*  .is-desktop {*/
+/*    display: block;*/
+/*  }*/
+/*}*/
+/*.is-tablet {*/
+/*  display: none;*/
+/*}*/
 
-@media (min-width: 768px) {
-  .is-tablet {
-    display: block;
-  }
-}
-@media (min-width: 1200px) {
-  .is-tablet {
-    display: none;
-  }
-}
-.is-mobile {
-  display: block;
-}
+/*@media (min-width: 768px) {*/
+/*  .is-tablet {*/
+/*    display: block;*/
+/*  }*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+/*  .is-tablet {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
+/*.is-mobile {*/
+/*  display: block;*/
+/*}*/
 
-@media (min-width: 1200px) {
-  .is-mobile {
-    display: none;
-  }
-}
-.is-xs {
-  display: block;
-}
+/*@media (min-width: 1200px) {*/
+/*  .is-mobile {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
+/*.is-xs {*/
+/*  display: block;*/
+/*}*/
 
-@media (min-width: 768px) {
-  .is-xs {
-    display: none;
-  }
-}
-.content-container {
-  width: calc(100% - 60px);
-  padding: 0 30px;
-  text-align: center;
-}
+/*@media (min-width: 768px) {*/
+/*  .is-xs {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
+/*.content-container {*/
+/*  width: calc(100% - 60px);*/
+/*  padding: 0 30px;*/
+/*  text-align: center;*/
+/*}*/
 
-@media (min-width: 1200px) {
-  .content-container {
-    width: 944px;
-    margin: 0 auto;
-  }
-}
-.content-container {
-  width: calc(100% - 60px);
-  padding: 0 30px;
-  text-align: center;
-}
+/*@media (min-width: 1200px) {*/
+/*  .content-container {*/
+/*    width: 944px;*/
+/*    margin: 0 auto;*/
+/*  }*/
+/*}*/
+/*.content-container {*/
+/*  width: calc(100% - 60px);*/
+/*  padding: 0 30px;*/
+/*  text-align: center;*/
+/*}*/
 
-@media (min-width: 1200px) {
-  .content-container {
-    width: 944px;
-    margin: 0 auto;
-  }
-}
+/*@media (min-width: 1200px) {*/
+/*  .content-container {*/
+/*    width: 944px;*/
+/*    margin: 0 auto;*/
+/*  }*/
+/*}*/
 @font-face {
   font-family: "Roboto-medium";
   src: url("../fonts/Roboto-medium.ttf");
