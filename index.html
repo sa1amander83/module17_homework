@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/adaptive.css">
+    <link rel="stylesheet" type="text/css"  href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/adaptive.css">
     <title> Каршеринг SkillFactory</title>
 </head>
 
@@ -29,16 +29,31 @@
                              </ul>
                     </nav>
 
-                <div class="user-navigation-wrapper" >
+                    <div class="user-navigation-wrapper" >
                         <ul class="user-navigation">
                             <li>
                                 <a class="login-link" href ="#">Войти </a>
                             </li>
                         </ul>
-                </div>
+                    </div>
+                  </div>
+               <div class="menu__button icon-menu is-mobile"></div>
             </div>
+
+            <div class="menu__mobile is-mobile is-animated">
+
+                <div class="menu__mobile-wrapper">
+
+                         <a href="#"  class="menu__mobile-link is-animated " >О нас</a>
+                        <a href="#"  class="menu__mobile-link is-animated">Условия</a>
+                        <a href="#"  class="menu__mobile-link is-animated">Частые вопросы</a>
+                    <div class="menu__mobile-close icon-close is-mobile"></div>
+                </div>
+
+            </div>
+
         </div>
-        </div>
+
     </header>
     <main>
         <div  class="about-section">
@@ -149,5 +164,6 @@
               </div>
             </div>
         </footer>
+<script src="./src/js/script.js"> </script>
     </body>
 </html>
