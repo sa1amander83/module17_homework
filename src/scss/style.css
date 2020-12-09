@@ -1,79 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 /* mixins*/
-@media (min-width: 1200px) {
-  section {
-    padding: 100px 0;
-  }
-}
-section.is-grey {
-  background: #F6F6F6;
-}
-
-.is-desktop {
-  display: none;
-}
-
-@media (min-width: 1200px) {
-  .is-desktop {
-    display: block;
-  }
-}
-.is-tablet {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .is-tablet {
-    display: block;
-  }
-}
-@media (min-width: 1200px) {
-  .is-tablet {
-    display: none;
-  }
-}
-.is-mobile {
-  display: block;
-}
-
-@media (min-width: 1200px) {
-  .is-mobile {
-    display: none;
-  }
-}
-.is-xs {
-  display: block;
-}
-
-@media (min-width: 768px) {
-  .is-xs {
-    display: none;
-  }
-}
-.content-container {
-  width: calc(100% - 60px);
-  padding: 0 30px;
-  text-align: center;
-}
-
-@media (min-width: 1200px) {
-  .content-container {
-    width: 944px;
-    margin: 0 auto;
-  }
-}
-.content-container {
-  width: calc(100% - 60px);
-  padding: 0 30px;
-  text-align: center;
-}
-
-@media (min-width: 1200px) {
-  .content-container {
-    width: 944px;
-    margin: 0 auto;
-  }
-}
+/*@media (min-width: 1200px) {*/
+/*  section {*/
+/*    padding: 100px 0;*/
+/*  }*/
+/*}*/
+/*section.is-grey {*/
+/*  background: #F6F6F6;*/
+/*}*/
+/*.is-desktop {*/
+/*  display: none;*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+/*  .is-desktop {*/
+/*    display: block;*/
+/*  }*/
+/*}*/
+/*.is-tablet {*/
+/*  display: none;*/
+/*}*/
+/*@media (min-width: 768px) {*/
+/*  .is-tablet {*/
+/*    display: block;*/
+/*  }*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+/*  .is-tablet {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
+/*.is-mobile {*/
+/*  display: block;*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+/*  .is-mobile {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
+/*.is-xs {*/
+/*  display: block;*/
+/*}*/
+/*@media (min-width: 768px) {*/
+/*  .is-xs {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
+/*.content-container {*/
+/*  width: calc(100% - 60px);*/
+/*  padding: 0 30px;*/
+/*  text-align: center;*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+/*  .content-container {*/
+/*    width: 944px;*/
+/*    margin: 0 auto;*/
+/*  }*/
+/*}*/
+/*.content-container {*/
+/*  width: calc(100% - 60px);*/
+/*  padding: 0 30px;*/
+/*  text-align: center;*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+/*  .content-container {*/
+/*    width: 944px;*/
+/*    margin: 0 auto;*/
+/*  }*/
+/*}*/
 @font-face {
   font-family: "Roboto-medium";
   src: url("../fonts/Roboto-medium.ttf");
@@ -101,14 +94,13 @@ section.is-grey {
 @font-face {
   font-family: "icons";
   src: url("../fonts/icons.eot");
-  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icon") format("svg");
+  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 [class*=icon-]:before {
   display: inline-block;
   font-family: "icons";
-  font-size: 27px;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -116,16 +108,24 @@ section.is-grey {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook:before {
+.icon-menu:before {
   content: "A";
 }
 
-.icon-insta:before {
+.icon-vk:before {
   content: "B";
 }
 
-.icon-vk:before {
+.icon-insta:before {
   content: "C";
+}
+
+.icon-facebook:before {
+  content: "D";
+}
+
+.icon-close:before {
+  content: "E";
 }
 
 /* normalize.css */
@@ -224,7 +224,7 @@ a {
   list-style: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 19px;
   /* identical to box height */
   /* Black */
@@ -835,6 +835,7 @@ h2, h3 {
   line-height: 19px;
   right: 0;
   margin-right: 32px;
+  font-size: 28px;
 }
 
 .footer__social-links a:hover {
@@ -842,5 +843,7 @@ h2, h3 {
   color: #dcc59e;
   cursor: pointer;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
