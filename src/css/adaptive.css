@@ -11,11 +11,12 @@
         align-content: center;
         align-items: center;
         overflow-x: hidden;
+
     }
     body {
         max-width: 1440px;
         text-align: center;
-
+        max-height: 2180px;
 
     }
 
@@ -110,6 +111,7 @@
 
 
         @media only screen and (max-width: 480px) {
+
             .is-desktop {
                 display: none;
             }
@@ -119,6 +121,7 @@
                 max-width: 100%;
                 max-height: 1577px;
                 overflow-x:  hidden;
+                overflow-y: hidden;
             }
 
             body {

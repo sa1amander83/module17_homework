@@ -43,10 +43,11 @@
             <div class="menu__mobile is-mobile is-animated">
 
                 <div class="menu__mobile-wrapper">
-
+                    <a href="#"  class="menu__mobile-link is-animated">Войти</a>
                          <a href="#"  class="menu__mobile-link is-animated " >О нас</a>
                         <a href="#"  class="menu__mobile-link is-animated">Условия</a>
                         <a href="#"  class="menu__mobile-link is-animated">Частые вопросы</a>
+
                     <div class="menu__mobile-close icon-close is-mobile"></div>
                 </div>
 
@@ -166,18 +167,26 @@
         </footer>
 <div class="modal__form is-animated">
     <div class="modal__form-wrapper is-animated">
-        <form class="modal__form-form" action="#">
-            <input type="email" placeholder="Электронная почта"  required />
-           <div class="password__wrap">
-            <input type="password" placeholder="Пароль" required />
-           <a href="#"  class="forgot__password">Забыли пароль</a>
-           </div>
 
-            <button class="modal__form-send">Send</button>
+        <form class="modal__form-form" action="#">
+            <div class="modal__form-close icon-close"></div>
+            <img src="./src/img/sign_in.svg" alt="" class="sign__in__img">
+                   <h3 class="autorize">Авторизация</h3>
+            <input type="email" placeholder="Электронная почта"  required />
+
+               <input  class="passform" type="password" placeholder="Пароль" required />
+
+                        <a href="#"  class="forgot__password">Забыли?</a>
+
+
+            <button class="modal__form-send">Войти</button>
+            <div class="modal__form_rectangle"></div>
+
+
+
         </form>
-        <div class="modal__form-close icon-close"></div>
     </div>
-</div>
+    </div>
 
 <script src="./src/js/script.js"> </script>
     </body>
