@@ -255,7 +255,7 @@
 
     .rectangle {
         display: none;
-    } v b
+    }
 
     .contacts {
         background: #F7F9FB;;
@@ -482,7 +482,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-
+        min-height: 340px;
 
     }
 
@@ -517,18 +517,19 @@
 }
 
 .h2-contact {
-    margin: 0;
+    margin-top: 80px;
 padding:0;
 }
 
-.rectangle {
-    padding: 0;
-    margin: 0;
+
+
+.contacts .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 200px;
+    width: 100vw;
 }
-    .contacts {
-        min-height: 0;
-        min-width: 100vw;
-    }
     .h3-team {
 
        margin: 0;
