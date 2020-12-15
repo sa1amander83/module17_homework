@@ -2,7 +2,6 @@ function  pageLoaded() {
     const menuBtn = document.querySelector(".menu__button");
     const closeMenuButton = document.querySelector(".menu__mobile-close");
     const menuMobile = document.querySelector(".menu__mobile");
-    const ulwrap = document.querySelector(".ulwrap");
 
     menuBtn.addEventListener("click", menuOpen);
 
@@ -10,12 +9,12 @@ function  pageLoaded() {
 
     function menuOpen() {
         menuMobile.classList.add("is-active");
-        ulwrap.classList.add("is-active");
+
     }
 
     function menuClose() {
         menuMobile.classList.remove("is-active");
-        ulwrap.classList.remove("is-active");
+
     }
 
 
@@ -37,13 +36,29 @@ function  pageLoaded() {
         form.classList.remove("is-active");
         form.classList.add("is-closed");
     }
+
+// function collapse
+    const coll = document.getElementsByClassName("collapse");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                content.classList.remove("style-active");
+
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add ("style-active");
+            }
+        });
+    }
+
+
+
 }
-
-
-
-
-
-
 
 
 

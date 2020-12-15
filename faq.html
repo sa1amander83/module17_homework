@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" type="text/css"  href="src/css/style.css">
-<!--    <link rel="stylesheet" type="text/css" href="src/css/adaptive.css">-->
+    <link rel="stylesheet" type="text/css"  href="src/css/faq.css">
     <title> Каршеринг SkillFactory</title>
 </head>
 
@@ -57,92 +56,48 @@
 
     </header>
     <main>
-        <div  class="about-section">
-        <img class="main-page-logo" src="./src/img/undraw_team_spirit_hrr4_1.svg" alt="рисунок команды">
+        <div  class="faq-section">
+        <img class="main-page-logo" src="./src/img/FAQ.svg" alt="рисунок команды">
 
             <section >
                 <div class="container-about">
-                <h1>О нас</h1>
+                <h1>Частые вопросы</h1>
                 <div class="description">
-                        Это учебный проект, созданный с целью
-                        получения боевого опыта в разработке
-                        настоящего живого веб-приложения. Этот
-                        сервис имитирует работу каршеринга,<br>
-                        в котором можно не только арендовать
-                    автомобили, но и сдавать их в аренду.</div>
+                    Отвечаем на вопросы, которые у вас могут возникнуть.</div>
         </div>
 </section>
-        </div>
-
-<section class="section-contacts">
-<div class="contacts fullscreen" >
-    <div class="container">
-        <h2 class="h2-contact"> Контакты</h2>
-        <div class="index-columns">
 
 
-        <div class="email-section">
-            <div class="email"> Электронная почта</div>
-              <div>
-                <a class="email-block" href="mailto:drive@skillfactory.com" target="_blank" rel="nofollow"> drive@skillfactory.com</a>
-                 </div>
-              </div>
+<section class="question-section">
 
-        <div class="rectangle .is-mobile"></div>
-            <div class="phone-section">
-            <div class="phone">Телефон</div>
-            <a class="phoneNumber" href="tel:+79121234567"> +7 912 123-45-67</a>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
+    <button class="collapse">Могу ли я отменить бронь? </button>
+
+    <div class="content"> Можете, если оплатили в полном объеме, деньги вам все равно не вернутся</div>
+
+    <button class="collapse">Могу ли я вернуть деньги, если не подошёл автомобиль?</button>
+        <div class="content">Не можете, ваши деньги ушли в фонд поддержки мемчиков с котиками </div>
 
 
-    <section class="team" >
-        <div class="container">
+    <button class="collapse">Что делать, если случилось ДТП?</button>
+        <div class="content"> Не оставлять свидетелей, сьесть карту с видеорегистратора</div>
 
-             <h2 class="h3-team">Команда</h2>
 
-            <div class="team-wrapper">
-                 <div class="team-unit">
-                <img src="./src/img/ivanov.png" alt="Иван Иванов СЕО менеджер">
-                <div class="unit__initials">Иван Иванов</div>
-                <div class="unit__prof">СЕО</div>
-            </div>
+    <button class="collapse">Могу ли я оставить автомобиль в удобном для меня месте?    </button>
+        <div class="content">Данный вопрос обсуждается с собственником, но как правило автомобиль нужно вернуть туда, где вы его получили.</div>
 
-            <div class="team-unit">
-                <img src="./src/img/smirnov.png" alt="Алексей Смирнов фронтендразработчик">
-                <div class="unit__initials">Алексей Смирнов</div>
-                <div class="unit__prof">Frontend-разработчик</div>
-            </div>
 
-            <div class="team-unit">
-                <img src="./src/img/yarcev.png" alt="Денис Ярцев бэкенд разработчик">
-                <div class="unit__initials">Денис Ярцев</div>
-                <div class="unit__prof">Backend-разработчик</div>
-            </div>
+    <button class="collapse">Что делать, если собственник просит заплатить ему напрямую?   </button>
+        <div class="content">Напрямую платить низзя, иначе 100 китайских программистов
+            сидящих в подвале не получат свой дошик :( </div>
 
-            <div class="team-unit">
-                <img src="./src/img/morozov.png" alt="Николай Морозов дизайнер">
-                <div class="unit__initials">Николай Морозов</div>
-                <div class="unit__prof">Дизайнер</div>
-            </div>
 
-            <div class="team-unit">
-                <img src="./src/img/deeva.png" alt="Ирина Деева копирайтер">
-                <div class="unit__initials">Ирина Деева</div>
-                <div class="unit__prof">Копирайтер</div>
-            </div>
+    <button class="collapse">Должен ли я заправлять автомобиль? </button>
+        <div class="content"> если это Тесла, то можно не надо? и желательно не лить соляру в бензиновую машину</div>
 
-            <div class="team-unit">
-                <img src="./src/img/strelkova.png" alt="Мария Стрелкова СММ менеджер">
-                <div class="unit__initials">Мария Стрелкова</div>
-                <div class="unit__prof">SMM</div>
-              </div>
-            </div>
-        </div>
+
+
          </section>
+        </div>
 </main>
         <footer class="main-footer">
             <div class="container">
@@ -182,7 +137,7 @@
 <script src="./src/js/script.js"> </script>
     </body>
 <script type='text/javascript' id="__bs_script__">//<![CDATA[
-document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.11.1.js'><\/script>".replace("HOST", location.hostname));//]]>
+
 </script>
 
 </html>

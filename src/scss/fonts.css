@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@font-face {
+  font-family: "Roboto-medium";
+  src: url("../fonts/Roboto-medium.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../fonts/Roboto-regular.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class*=icon-]:before {
+  display: inline-block;
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "A";
+}
+
+.icon-vk:before {
+  content: "B";
+}
+
+.icon-insta:before {
+  content: "C";
+}
+
+.icon-facebook:before {
+  content: "D";
+}
+
+.icon-close:before {
+  content: "E";
+}
+
+/*# sourceMappingURL=fonts.css.map */
