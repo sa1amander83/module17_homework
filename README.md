@@ -1,3 +1,2 @@
-
-"# SFDrive" 
-"# SFDrive" 
+Домашка 
+добавлена страница FAQ + adaptive
