@@ -2,7 +2,7 @@
 
 header {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 0px;
   @include xl {
     //position: fixed;
     //top: 0;
@@ -15,14 +15,12 @@ header {
 
 .main-header {
 
-  margin-top: -7px;
+  margin-top: -9px;
 
   @include xl { max-width: 100%;
 
-    margin-bottom: 29px;
-    //opacity: 0.95;
-    //position: fixed;
-  }
+    margin-bottom: 0;
+    }
 }
 
 

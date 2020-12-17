@@ -19,13 +19,13 @@ function  pageLoaded() {
 
 
     const enterBtn = document.querySelector(".login-link");
+    const mobBtn = document.querySelector(".enter__autorize ");
     const formClose = document.querySelector(".modal__form-close");
     const form = document.querySelector(".modal__form");
 
-
     enterBtn.addEventListener("click", openForm);
+    mobBtn.addEventListener("click",openForm );
     formClose.addEventListener("click", closeForm);
-
 
     function openForm() {
         form.classList.add("is-active");
@@ -38,6 +38,7 @@ function  pageLoaded() {
     }
 
 // function collapse
+
     const coll = document.getElementsByClassName("collapse");
     let i;
 
@@ -45,6 +46,7 @@ function  pageLoaded() {
         coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             let content = this.nextElementSibling;
+
             if (content.style.maxHeight){
                 content.style.maxHeight = null;
                 content.classList.remove("style-active");
@@ -52,8 +54,10 @@ function  pageLoaded() {
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
                 content.classList.add ("style-active");
+                // coll[i].classList.remove("style-not-active");
             }
-        });
+
+                 });
     }
 
 
