@@ -54,7 +54,7 @@ function  pageLoaded() {
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
                 content.classList.add ("style-active");
-                // coll[i].classList.remove("style-not-active");
+
             }
 
                  });
